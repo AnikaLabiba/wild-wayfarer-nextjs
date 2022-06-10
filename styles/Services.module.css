@@ -1,0 +1,6 @@
+.bookBtn{
+    border: none;
+}
+.bookBtn:hover{
+    background-color: rgb(139, 73, 214);
+}
