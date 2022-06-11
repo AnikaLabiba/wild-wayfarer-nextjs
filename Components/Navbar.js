@@ -4,9 +4,9 @@ import styles from '../styles/Navbar.module.css'
 const Navbar = () => {
     // menu items
     const menuItem = <>
-        <li className='mx-8 text-indigo-400 font-bold '>Services</li>
-        <li className='mx-8 text-indigo-400 font-bold'>Blog</li>
-        <li className='mx-8 text-indigo-400 font-bold'>Contact</li>
+        <li className='mx-6 text-indigo-400 font-bold '><a href='#services'>Services</a></li>
+        <li className='mx-5 text-indigo-400 font-bold'><a>Blog</a></li>
+        <li className='mx-6 text-indigo-400 font-bold'><a>Contact</a></li>
     </>
 
     return (
@@ -22,7 +22,7 @@ const Navbar = () => {
                         {menuItem}
                     </ul>
                 </div>
-                <a className={`btn btn-ghost normal-case text-xl text-indigo-400 font-bold ${styles.title}`}>Wild Wayfarer</a>
+                <a href='#home' className={`btn btn-ghost normal-case text-2xl text-indigo-400 font-bold ${styles.title}`}>Wild Wayfarer</a>
             </div>
             <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">

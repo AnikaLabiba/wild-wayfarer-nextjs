@@ -1,3 +1,14 @@
+.card:hover,
+.card:focus,
+.card:active {
+  color: rgb(123, 97, 238);
+  border:1px solid rgb(123, 97, 238);
+}
+
+.serviceImg{
+    width: 600px;
+    height: 400px;
+}
 .bookBtn{
     border: none;
 }

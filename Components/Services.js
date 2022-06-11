@@ -1,18 +1,19 @@
 import React from 'react';
 import Image from "next/image"
-import pic1 from '../public/photo.png'
-import pic2 from '../public/Pic1.jpg'
-import pic3 from '../public/hotel.png'
+import photography from '../public/photography.png'
+import hotel from '../public/hotel.png'
+import destination from '../public/destination.png'
+import visaTips from '../public/visa tips.jpg'
 import styles from '../styles/Services.module.css'
 
 const Services = () => {
     return (
-        <div className='mt-20'>
-            <h2 className='text-4xl font-bold text-center'>My Services</h2>
-            <div className='grid lg:grid-cols-2 gap-28 lg:px-36 my-16'>
-                <div className="card bg-base-100 shadow-xl">
+        <div id='services' className='mt-20'>
+            <h2 className='text-4xl font-bold text-center text-indigo-400'>My Services</h2>
+            <div className='grid lg:grid-cols-2 gap-28 lg:px-36 my-16 text-slate-500 font-bold'>
+                <div className={`${styles.card} card bg-base-100 shadow-xl`}>
                     <figure>
-                        <Image src={pic1} alt="Shoes" />
+                        <Image className={styles.serviceImg} src={photography} alt="Shoes" />
                     </figure>
                     <div className="card-body">
                         <h2 className="card-title">Photoshoot</h2>
@@ -23,9 +24,9 @@ const Services = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card bg-base-100 shadow-xl">
+                <div className={`${styles.card} card bg-base-100 shadow-xl`}>
                     <figure>
-                        <Image src={pic3} alt="Shoes" />
+                        <Image src={hotel} alt="Shoes" />
                     </figure>
                     <div className="card-body">
                         <h2 className="card-title">Hotel & resort booking</h2>
@@ -36,9 +37,9 @@ const Services = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card bg-base-100 shadow-xl">
+                <div className={`${styles.card} card bg-base-100 shadow-xl`}>
                     <figure>
-                        <Image src={pic2} alt="Shoes" />
+                        <Image src={destination} alt="Shoes" />
                     </figure>
                     <div className="card-body">
                         <h2 className="card-title">Info & tips about the destination.</h2>
@@ -49,9 +50,9 @@ const Services = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card bg-base-100 shadow-xl">
+                <div className={`${styles.card} card bg-base-100 shadow-xl`}>
                     <figure>
-                        <Image src={pic2} alt="Shoes" />
+                        <Image src={visaTips} alt="Shoes" />
                     </figure>
                     <div className="card-body">
                         <h2 className="card-title">Info & tips about the passport and visa.</h2>

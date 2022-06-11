@@ -7,7 +7,7 @@ import carouse4 from '../public/Carousel/carousel4.png'
 
 const Banner = () => {
     return (
-        <div className="h-96 w-full carousel carousel-vertical">
+        <div id='home' className="h-96 w-full carousel carousel-vertical mt-14">
             <div className="carousel-item h-full">
                 <Image className='rounded-xl' src={carousel} alt='' />
                 <div className='flex flex-col text-right font-bold hidden lg:block h-36 my-auto'>
