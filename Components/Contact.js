@@ -7,7 +7,7 @@ const Contact = () => {
     return (
         <div id='contact'>
             <LightSpeed left>
-                <h2 className='text-center text-5xl font-bold text-indigo-400 mb-5'>Get in Touch..</h2>
+                <h2 className='text-center text-4xl font-bold text-indigo-400 mb-5'>Get in Touch..</h2>
             </LightSpeed>
 
             <div className="hero mb-20">

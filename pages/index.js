@@ -8,6 +8,7 @@ import { BsInstagram } from 'react-icons/bs';
 import { AiFillTwitterCircle } from 'react-icons/ai';
 import About from '../Components/About'
 import Contact from '../Components/Contact'
+import Reviews from '../Components/Reviews'
 
 
 export default function Home() {
@@ -29,6 +30,8 @@ export default function Home() {
         <About />
         {/* contact */}
         <Contact />
+        {/* Reviews */}
+        <Reviews />
       </main>
 
       <footer className={styles.footer}>
