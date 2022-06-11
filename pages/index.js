@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Banner from '../Components/Banner'
 import Navbar from '../Components/Navbar'
 import Services from '../Components/Services'
@@ -8,6 +7,7 @@ import { AiFillFacebook } from 'react-icons/ai';
 import { BsInstagram } from 'react-icons/bs';
 import { AiFillTwitterCircle } from 'react-icons/ai';
 import About from '../Components/About'
+import Contact from '../Components/Contact'
 
 
 export default function Home() {
@@ -21,14 +21,20 @@ export default function Home() {
 
       <main className={styles.main}>
         <Navbar />
+        {/* Banner section */}
         <Banner />
+        {/* My services section */}
         <Services />
+        {/* about section */}
         <About />
+        {/* contact */}
+        <Contact />
       </main>
 
       <footer className={styles.footer}>
         <div>
           <p>Copyright © 2022 - Wild Wayfarer</p>
+          {/* social icons */}
           <span className={styles.logo}>
             < AiFillFacebook />
             <BsInstagram />

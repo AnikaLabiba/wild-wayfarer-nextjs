@@ -1,16 +1,16 @@
 import React from 'react';
+import { Flip } from 'react-reveal';
 import styles from '../styles/Navbar.module.css'
 
 const Navbar = () => {
     // menu items
     const menuItem = <>
-        <li className='mx-6 text-indigo-400 font-bold '><a href='#services'>Services</a></li>
+        <li className='mx-6 text-indigo-400 font-bold'><a href='#services'>Services</a></li>
         <li className='mx-5 text-indigo-400 font-bold'><a href='#about'>About</a></li>
-        <li className='mx-6 text-indigo-400 font-bold'><a>Contact</a></li>
+        <li className='mx-6 text-indigo-400 font-bold'><a href='#contact'>Contact</a></li>
     </>
 
     return (
-
         <div className={`navbar bg-base-100 lg:px-16 ${styles.navbarMain}`}>
             <div className="navbar-start">
                 <div className="dropdown">
@@ -22,7 +22,10 @@ const Navbar = () => {
                         {menuItem}
                     </ul>
                 </div>
-                <a href='#home' className={`btn btn-ghost normal-case text-2xl text-indigo-400 font-bold ${styles.title}`}>Wild Wayfarer</a>
+                <Flip top>
+                    <a href='' className={`btn btn-ghost normal-case text-2xl text-indigo-400 font-bold ${styles.title}`}>Wild Wayfarer</a>
+                </Flip>
+
             </div>
             <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">
@@ -32,6 +35,7 @@ const Navbar = () => {
             </div>
 
         </div>
+
 
     );
 };
