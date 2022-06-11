@@ -7,6 +7,7 @@ import styles from '../styles/Home.module.css'
 import { AiFillFacebook } from 'react-icons/ai';
 import { BsInstagram } from 'react-icons/bs';
 import { AiFillTwitterCircle } from 'react-icons/ai';
+import About from '../Components/About'
 
 
 export default function Home() {
@@ -22,7 +23,7 @@ export default function Home() {
         <Navbar />
         <Banner />
         <Services />
-
+        <About />
       </main>
 
       <footer className={styles.footer}>

@@ -5,7 +5,7 @@ const Navbar = () => {
     // menu items
     const menuItem = <>
         <li className='mx-6 text-indigo-400 font-bold '><a href='#services'>Services</a></li>
-        <li className='mx-5 text-indigo-400 font-bold'><a>Blog</a></li>
+        <li className='mx-5 text-indigo-400 font-bold'><a href='#about'>About</a></li>
         <li className='mx-6 text-indigo-400 font-bold'><a>Contact</a></li>
     </>
 

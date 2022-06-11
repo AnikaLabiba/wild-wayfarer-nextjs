@@ -1,0 +1,24 @@
+.aboutImg{
+    width: 90%;
+}
+.about{
+    width: 70%;
+}
+/* making Mobile and tab responsive */
+@media only screen and (max-width:576px) {
+   .about{
+        width: 100%;
+        text-align: center;
+        padding: 0 0;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+   .aboutImg{
+        width: 100%;
+        margin: auto 0;
+    }
+    .about{
+        width: 70%;
+    }
+}
